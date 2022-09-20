@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[167]:
 
 
 import random
@@ -23,10 +19,6 @@ class Card():
     def __str__(self):
         return self.rank + ' of ' + self.suit
 
-
-# In[168]:
-
-
 class Deck():
     def __init__(self):
         
@@ -43,9 +35,6 @@ class Deck():
         random.shuffle(self.all_cards)
     def deal_one(self):
         return self.all_cards.pop()
-
-
-# In[169]:
 
 
 class Player():
@@ -84,12 +73,6 @@ class Player():
         self.cash += self.bank
         self.bank = 0
         
-        
-    
-
-
-# In[207]:
-
 
 def replay():
     answer = 'spatne'
@@ -105,12 +88,6 @@ def replay():
             game_on = False
             break
     return game_on
-
-
-   
-
-
-# In[212]:
 
 
 #game setup
@@ -257,7 +234,7 @@ while game_on == True:
                 replay()
             dealer_blackjack = True
     dealer_blackjack = True
-    #comparison
+    
    
         
             
